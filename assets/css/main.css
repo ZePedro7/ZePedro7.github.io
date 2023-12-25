@@ -1539,14 +1539,17 @@ br.clear {
   clear: both;
 }
 
+ul {
+  margin-bottom: 0em;
+}
+
 p,
-ul,
 ol,
 dl,
 table,
 blockquote,
 form {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /* Table */
@@ -2066,10 +2069,6 @@ ul.actions li:first-child {
   transition: opacity 1s ease-in-out;
 }
 
-.text__align {
-  text-align: justify;
-}
-
 body.is-preload #wrapper {
   opacity: 0;
 }
@@ -2297,9 +2296,9 @@ body.is-preload #wrapper {
 
 /* Quotes */
 .quote {
+  color: var(--color-body-darker);
   font-size: 3rem;
   font-style: italic;
-  color: var(--color-body-darker);
   line-height: 1.3;
 }
 
@@ -2326,8 +2325,10 @@ body.is-preload #wrapper {
 }
 
 .quote__line {
-  position: relative;
   bottom: 10px;
+  color: var(--color-headings);
+  position: relative;
+  text-align: justify;
 }
 
 @media screen and (min-width: 1024px) {
