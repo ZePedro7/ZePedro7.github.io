@@ -1,4 +1,3 @@
-Olá, me chamo Jose, sou Engenheiro Civil e Membro Associado A3 da Ordem
-dos Engenheiros de Angola (OEA).
-
-Esta é uma apresentação dos meus projetos e habilidades.
+Olá sou o ZéPedro, licenciado em Engenharia Civil
+pelo Instituto Superior Politécnico Metropolitano de Angola (IMETRO) 
+e Membro Associado A3 da Ordem dos Engenheiros de Angola (OEA).
