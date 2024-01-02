@@ -2310,7 +2310,8 @@ body.is-preload #wrapper {
   content: close-quote;
 }
 
-.quote__author {
+.quote__author,
+.quote__school {
   font-size: 2rem;
   font-weight: 500;
   font-style: normal;
@@ -2322,6 +2323,11 @@ body.is-preload #wrapper {
   opacity: 0.4;
   font-size: 1.5rem;
   font-style: normal;
+}
+
+.quote__school {
+  color: var(--color-headings);
+  font-size: 1.6rem;
 }
 
 .quote__line {
@@ -2342,6 +2348,10 @@ body.is-preload #wrapper {
 
   .quote__organization {
     font-size: 1.6rem;
+  }
+
+  .quote__school {
+    font-size: 2rem;
   }
 }
 
