@@ -2391,8 +2391,10 @@ body.is-preload #wrapper {
   }
 
   .quote__organization,
-  .quote__school {
-    font-size: 1.6rem;
+  .quote__school,
+  .quote__course,
+  .quote__title {
+    font-size: 1.5rem;
   }
 }
 
