@@ -1,5 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic"); */
 @import url("fontawesome-all.min.css");
+
+@font-face {
+  font-family: "eb_garamond_sc08_regular";
+  src: url("/assets/css/fonts/ebgaramondsc08-regular-webfont.woff2")
+      format("woff2"),
+    url("ebgaramondsc08-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "eb_garamond_sc12_regular";
+  src: url("ebgaramondsc12-regular-webfont.woff2") format("woff2"),
+    url("ebgaramondsc12-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
@@ -95,7 +113,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: inherit;
+  font-family: "eb_garamond_sc08_regular", sans-serif;
   vertical-align: baseline;
 }
 
@@ -1558,6 +1576,13 @@ table {
   width: 100%;
 }
 
+td,
+th {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
 table.default tbody tr {
   border-bottom: solid 1px #f4f4f4;
 }
@@ -1575,6 +1600,11 @@ table.default th {
 table.default thead {
   border-bottom: solid 2px #f4f4f4;
 }
+
+.year {
+  color: var(--color-primary);
+}
+d
 
 /* Form */
 
@@ -2318,23 +2348,37 @@ body.is-preload #wrapper {
   margin-bottom: 0;
 }
 
-.quote__organization {
+.quote__organization,
+.quote__school,
+.quote__course,
+.quote__title {
   color: var(--color-headings);
-  opacity: 0.4;
   font-size: 1.5rem;
   font-style: normal;
 }
 
-.quote__school {
-  color: var(--color-headings);
-  font-size: 1.6rem;
+.quote__organization,
+.quote__school,
+.quote__title {
+  font-family: "eb_garamond_sc12_regular", sans-serif;
 }
 
-.quote__line {
+.quote__organization {
+  opacity: 0.4;
+}
+
+.quote__line,
+.quote__institute,
+.quote__engineer {
   bottom: 10px;
   color: var(--color-headings);
   position: relative;
   text-align: justify;
+}
+
+.quote__year {
+  bottom: 1px;
+  line-height: 2;
 }
 
 @media screen and (min-width: 1024px) {
@@ -2346,12 +2390,9 @@ body.is-preload #wrapper {
     font-size: 2.4rem;
   }
 
-  .quote__organization {
-    font-size: 1.6rem;
-  }
-
+  .quote__organization,
   .quote__school {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 
