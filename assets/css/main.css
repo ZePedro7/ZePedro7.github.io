@@ -1574,13 +1574,25 @@ form {
 
 table {
   width: 100%;
+  color: #000;
+}
+
+.table__striped thead tr:nth-child(odd),
+.table__hover tbody tr:hover,
+.table__hover .auto__avaliacao__header,
+.table__hover .table__top:hover {
+  background-color: #ddd;
 }
 
 td,
 th {
-  border: 1px solid grey;
+  border: 1px solid black;
   border-collapse: collapse;
-  padding: 5px;
+  padding: 3px;
+}
+
+.th__first {
+  text-align: center;
 }
 
 table.default tbody tr {
@@ -1602,7 +1614,9 @@ table.default thead {
 }
 
 .year {
-  color: var(--color-primary);
+  color: var(--color-headings);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 d
 
