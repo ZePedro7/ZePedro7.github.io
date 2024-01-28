@@ -1618,7 +1618,12 @@ table.default thead {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-d
+
+.number {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /* Form */
 
