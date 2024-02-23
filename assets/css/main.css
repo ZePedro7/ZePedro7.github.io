@@ -1617,6 +1617,7 @@ table.default thead {
   color: var(--color-headings);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
 }
 
 .number {
